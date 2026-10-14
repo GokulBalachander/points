@@ -14,8 +14,8 @@ python3 -m http.server 8000
 - **Name, bio, projects, experience, skills:** edit `index.html` (each section is commented).
 - **Resume:** replace `assets/resume.pdf` (keep the file name).
 - **Photo:** replace `assets/profile-placeholder.svg` or point the `<img>` in the About section at your own file.
-- **Email:** update `your.email@example.com` in the Contact section (both `href` values and `data-email`).
-- **LinkedIn:** update `https://www.linkedin.com/in/your-profile`.
+- **Email:** update the address in the Contact section (both `href` values and `data-email`).
+- **LinkedIn:** update the LinkedIn URL in the Contact section.
 - **Live Demo links:** replace each `href="#"` marked `data-placeholder-link`.
 - **Skill levels:** change `style="--lvl:90"` and the matching `aria-valuenow` on each stat bar.
 - **Colors/fonts:** edit the tokens at the top of `css/styles.css`.
