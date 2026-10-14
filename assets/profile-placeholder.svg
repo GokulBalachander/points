@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" role="img" aria-label="Profile photo placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16243C"/>
+      <stop offset="1" stop-color="#0B0F19"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="320" fill="url(#bg)"/>
+  <g stroke="#00F2FE" stroke-opacity=".12">
+    <path d="M0 40H320M0 80H320M0 120H320M0 160H320M0 200H320M0 240H320M0 280H320"/>
+    <path d="M40 0V320M80 0V320M120 0V320M160 0V320M200 0V320M240 0V320M280 0V320"/>
+  </g>
+  <circle cx="160" cy="128" r="54" fill="#1F2B42" stroke="#00F2FE" stroke-width="2"/>
+  <path d="M68 300c6-62 46-96 92-96s86 34 92 96" fill="#1F2B42" stroke="#10B981" stroke-width="2"/>
+  <text x="160" y="140" text-anchor="middle" font-family="Orbitron, sans-serif" font-size="34" font-weight="700" fill="#00F2FE">GB</text>
+  <text x="160" y="270" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#9CA3AF">Replace with your photo</text>
+</svg>

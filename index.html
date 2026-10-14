@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gokul Balachander | Data Analyst Portfolio</title>
+  <meta name="description" content="Portfolio of Gokul Balachander, a Computer Science with Business Applications student at UC Riverside seeking Data Analyst, Business Data Analyst, and Data Scientist roles." />
+  <meta name="theme-color" content="#0B0F19" />
+  <meta property="og:title" content="Gokul Balachander | Data Analyst Portfolio" />
+  <meta property="og:description" content="CSBA Student | Bridging Computer Science & Business Intelligence to unlock insights." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Flag the page as JS-capable before paint so the boot screen and reveal animations only apply when JS runs -->
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============ BOOT SEQUENCE / LOADER ============ -->
+  <div class="boot" id="boot" role="dialog" aria-modal="true" aria-labelledby="boot-title">
+    <div class="boot__panel">
+      <p class="boot__title" id="boot-title">PORTFOLIO_OS <span>v2.0</span></p>
+      <ol class="boot__log" id="boot-log" aria-live="polite"></ol>
+      <div class="boot__bar" aria-hidden="true"><span id="boot-bar-fill"></span></div>
+      <p class="boot__pct" id="boot-pct" aria-hidden="true">0%</p>
+      <button class="btn btn--ghost boot__skip" id="boot-skip" type="button">Skip Intro &rsaquo;</button>
+    </div>
+  </div>
+
+  <!-- ============ HUD NAVIGATION ============ -->
+  <header class="hud" id="hud">
+    <nav class="hud__inner container" aria-label="Primary">
+      <a class="hud__brand" href="#home" aria-label="Gokul Balachander, back to top">
+        <img src="assets/favicon.svg" alt="" width="28" height="28" />
+        <span>GB<span class="accent">.data</span></span>
+      </a>
+
+      <button class="hud__toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Open menu</span>
+        <span class="hud__toggle-bar" aria-hidden="true"></span>
+        <span class="hud__toggle-bar" aria-hidden="true"></span>
+        <span class="hud__toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <ul class="hud__menu" id="nav-menu">
+        <li><a class="hud__link" href="#home"><span class="hud__game">Spawn</span><span class="hud__plain">Home</span></a></li>
+        <li><a class="hud__link" href="#about"><span class="hud__game">Lore</span><span class="hud__plain">About</span></a></li>
+        <li><a class="hud__link" href="#projects"><span class="hud__game">Quests</span><span class="hud__plain">Projects</span></a></li>
+        <li><a class="hud__link" href="#experience"><span class="hud__game">Campaign</span><span class="hud__plain">Experience</span></a></li>
+        <li><a class="hud__link" href="#skills"><span class="hud__game">Inventory</span><span class="hud__plain">Skills</span></a></li>
+        <li><a class="hud__link" href="#contact"><span class="hud__game">Uplink</span><span class="hud__plain">Contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO / SPAWN POINT ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__world" aria-hidden="true">
+        <div class="hero__sky"></div>
+        <div class="hero__grid"></div>
+        <!-- Original abstract floating islands and monoliths -->
+        <svg class="shape shape--island-lg" data-depth="0.25" viewBox="0 0 240 160">
+          <polygon points="20,50 120,20 220,50 120,80" fill="url(#gTop)" />
+          <polygon points="20,50 120,80 120,150 60,100" fill="#3b4556" />
+          <polygon points="220,50 120,80 120,150 180,100" fill="#2a3242" />
+          <polygon points="20,50 120,20 220,50 120,80" fill="none" stroke="#00F2FE" stroke-opacity=".5" />
+          <rect x="108" y="-30" width="24" height="70" fill="#1c2433" stroke="#00F2FE" stroke-opacity=".7" />
+          <line x1="120" y1="-25" x2="120" y2="35" stroke="#00F2FE" stroke-width="2" class="glow-line" />
+          <defs>
+            <linearGradient id="gTop" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#22C55E" />
+              <stop offset="1" stop-color="#0f7a4f" />
+            </linearGradient>
+          </defs>
+        </svg>
+        <svg class="shape shape--island-sm" data-depth="0.5" viewBox="0 0 160 120">
+          <polygon points="10,40 80,15 150,40 80,65" fill="#10B981" />
+          <polygon points="10,40 80,65 80,115" fill="#4b5563" />
+          <polygon points="150,40 80,65 80,115" fill="#374151" />
+          <polygon points="10,40 80,15 150,40 80,65" fill="none" stroke="#00F2FE" stroke-opacity=".4" />
+        </svg>
+        <svg class="shape shape--monolith" data-depth="0.4" viewBox="0 0 80 220">
+          <polygon points="40,0 75,30 75,200 40,220 5,200 5,30" fill="none" stroke="#00F2FE" stroke-width="1.5" stroke-opacity=".8" />
+          <polygon points="40,0 40,220 5,200 5,30" fill="#00F2FE" fill-opacity=".06" />
+          <line x1="5" y1="80" x2="75" y2="80" stroke="#00F2FE" stroke-opacity=".4" />
+          <line x1="5" y1="140" x2="75" y2="140" stroke="#00F2FE" stroke-opacity=".4" />
+          <circle cx="40" cy="110" r="6" fill="#00F2FE" class="glow-dot" />
+        </svg>
+        <svg class="shape shape--cube" data-depth="0.7" viewBox="0 0 100 100">
+          <polygon points="50,5 95,28 50,51 5,28" fill="none" stroke="#10B981" stroke-width="1.5" />
+          <polygon points="5,28 50,51 50,97 5,74" fill="none" stroke="#10B981" stroke-width="1.5" />
+          <polygon points="95,28 50,51 50,97 95,74" fill="none" stroke="#10B981" stroke-width="1.5" />
+        </svg>
+        <svg class="shape shape--ring" data-depth="0.15" viewBox="0 0 120 120">
+          <circle cx="60" cy="60" r="54" fill="none" stroke="#F59E0B" stroke-opacity=".5" stroke-dasharray="6 10" />
+          <circle cx="60" cy="60" r="36" fill="none" stroke="#00F2FE" stroke-opacity=".35" />
+        </svg>
+      </div>
+
+      <div class="hero__content container">
+        <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span> Player 1 Ready &middot; Open to Internships &amp; Full-Time Roles</p>
+        <h1 class="hero__title" id="hero-title">
+          <span class="hero__hello">Hi, I'm</span>
+          <span class="hero__name">Gokul Balachander</span>
+        </h1>
+        <p class="hero__tagline">
+          CSBA Student <span class="sep" aria-hidden="true">|</span> Bridging Computer Science &amp; Business Intelligence to unlock insights
+        </p>
+        <p class="hero__roles">
+          <span class="chip chip--cyan">Data Analyst</span>
+          <span class="chip chip--green">Business Data Analyst</span>
+          <span class="chip chip--amber">Data Scientist</span>
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="assets/resume.pdf" download="Gokul_Balachander_Resume.pdf">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M11 3h2v10.17l3.59-3.58L18 11l-6 6-6-6 1.41-1.41L11 13.17V3zM5 19h14v2H5z"/></svg>
+            Download Resume
+          </a>
+          <a class="btn btn--secondary" href="#projects">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg>
+            View Projects
+          </a>
+        </div>
+
+        <dl class="hero__stats">
+          <div class="stat"><dt>Location</dt><dd>Riverside, CA</dd></div>
+          <div class="stat"><dt>Class</dt><dd>CS + Business</dd></div>
+          <div class="stat"><dt>Quests Done</dt><dd><span data-count="12">12</span>+</dd></div>
+          <div class="stat"><dt>Status</dt><dd class="text-green">Available</dd></div>
+        </dl>
+      </div>
+
+      <a class="hero__scroll" href="#about" aria-label="Scroll to About section">
+        <span aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT / CHARACTER LORE ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__game">// Character Lore</p>
+          <h2 class="section__title" id="about-title">About Me</h2>
+        </header>
+
+        <div class="about">
+          <figure class="about__portrait reveal">
+            <div class="portrait-frame">
+              <!-- Replace assets/profile-placeholder.svg with your photo (e.g. assets/profile.jpg) -->
+              <img src="assets/profile-placeholder.svg" alt="Portrait of Gokul Balachander" width="320" height="320" loading="lazy" />
+              <span class="portrait-frame__corner tr" aria-hidden="true"></span>
+              <span class="portrait-frame__corner bl" aria-hidden="true"></span>
+            </div>
+            <figcaption class="portrait-caption">
+              <span class="level">LVL 21</span> Data Ranger &middot; <span class="text-cyan">UC Riverside</span>
+            </figcaption>
+          </figure>
+
+          <div class="about__text reveal">
+            <p class="lead">
+              I'm a <strong>Computer Science with Business Applications (CSBA)</strong> student at the
+              <strong>University of California, Riverside</strong>, where I combine rigorous computing
+              coursework with business, finance, and management fundamentals.
+            </p>
+            <p>
+              I'm passionate about turning messy, raw data into <strong>clear, actionable business value</strong>.
+              Whether it's building a dashboard that helps a team spot trends, writing a Python script that automates
+              a tedious workflow, or training a model that forecasts demand, I focus on the question behind
+              the numbers: <em>what decision does this help someone make?</em>
+            </p>
+            <p>
+              Outside the classroom you'll find me at hackathons, contributing to student tech organizations like
+              ACM@UCR, and exploring new datasets just to see what stories they tell.
+            </p>
+
+            <ul class="attr-list" aria-label="Quick facts">
+              <li><span class="attr-list__k">Major</span><span class="attr-list__v">B.S. CS with Business Applications</span></li>
+              <li><span class="attr-list__k">School</span><span class="attr-list__v">UC Riverside &middot; Class of 2027</span></li>
+              <li><span class="attr-list__k">Focus</span><span class="attr-list__v">Analytics, BI, Machine Learning</span></li>
+              <li><span class="attr-list__k">Seeking</span><span class="attr-list__v">Data Analyst / Data Science Internships</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS / QUEST LOG ============ -->
+    <section class="section section--alt" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__game">// Quest Log</p>
+          <h2 class="section__title" id="projects-title">Projects</h2>
+          <p class="section__sub">Selected work across analytics dashboards, automation, and machine learning.</p>
+        </header>
+
+        <div class="filters reveal" role="group" aria-label="Filter projects by category">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All Quests</button>
+          <button class="filter" type="button" data-filter="analytics" aria-pressed="false">Dashboards</button>
+          <button class="filter" type="button" data-filter="automation" aria-pressed="false">Automation</button>
+          <button class="filter" type="button" data-filter="ml" aria-pressed="false">Machine Learning</button>
+        </div>
+
+        <div class="projects" id="project-grid">
+          <!-- Project card template: duplicate an <article> to add a project -->
+          <article class="card project reveal" data-category="analytics">
+            <div class="project__top">
+              <span class="project__type project__type--cyan">Main Quest &middot; Dashboard</span>
+              <img class="project__icon" src="assets/icons/chart.svg" alt="" width="40" height="40" />
+            </div>
+            <h3 class="project__title">Retail Sales Performance Dashboard</h3>
+            <p class="project__desc">
+              Interactive Power BI dashboard analyzing 100K+ transactions to track revenue, margin, and regional
+              performance, with drill-downs by product category and season.
+            </p>
+            <ul class="tags" aria-label="Tools used">
+              <li class="tag">Power BI</li><li class="tag">SQL</li><li class="tag">DAX</li><li class="tag">Excel</li>
+            </ul>
+            <p class="project__result"><span class="loot" aria-hidden="true">&#9670;</span><span><strong>Key Result:</strong> Identified 3 underperforming regions, informing a pricing change projected to lift margin by 8%.</span></p>
+            <div class="project__links">
+              <a class="btn btn--sm btn--ghost" href="https://github.com/GokulBalachander" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> repository for Retail Sales Performance Dashboard (opens in new tab)</span></a>
+              <a class="btn btn--sm btn--primary" href="#" data-placeholder-link>Live Demo<span class="sr-only"> of Retail Sales Performance Dashboard</span></a>
+            </div>
+          </article>
+
+          <article class="card project reveal" data-category="automation">
+            <div class="project__top">
+              <span class="project__type project__type--green">Side Quest &middot; Automation</span>
+              <img class="project__icon" src="assets/icons/gear.svg" alt="" width="40" height="40" />
+            </div>
+            <h3 class="project__title">Automated Report Scraper &amp; Pipeline</h3>
+            <p class="project__desc">
+              Python + Playwright bot that logs into internal portals, scrapes weekly KPI reports, cleans them with
+              Pandas, and pushes a consolidated summary to a shared Google Sheet.
+            </p>
+            <ul class="tags" aria-label="Tools used">
+              <li class="tag">Python</li><li class="tag">Playwright</li><li class="tag">Pandas</li><li class="tag">Cron</li>
+            </ul>
+            <p class="project__result"><span class="loot" aria-hidden="true">&#9670;</span><span><strong>Key Result:</strong> Automated workflow saving 10+ hours weekly of manual data entry.</span></p>
+            <div class="project__links">
+              <a class="btn btn--sm btn--ghost" href="https://github.com/GokulBalachander" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> repository for Automated Report Scraper (opens in new tab)</span></a>
+              <a class="btn btn--sm btn--primary" href="#" data-placeholder-link>Live Demo<span class="sr-only"> of Automated Report Scraper</span></a>
+            </div>
+          </article>
+
+          <article class="card project reveal" data-category="ml">
+            <div class="project__top">
+              <span class="project__type project__type--amber">Epic Quest &middot; ML</span>
+              <img class="project__icon" src="assets/icons/brain.svg" alt="" width="40" height="40" />
+            </div>
+            <h3 class="project__title">Customer Churn Prediction Model</h3>
+            <p class="project__desc">
+              End-to-end ML pipeline on a telecom dataset: feature engineering, class-imbalance handling, and a
+              gradient-boosted classifier with SHAP explanations for business stakeholders.
+            </p>
+            <ul class="tags" aria-label="Tools used">
+              <li class="tag">Python</li><li class="tag">scikit-learn</li><li class="tag">XGBoost</li><li class="tag">SHAP</li>
+            </ul>
+            <p class="project__result"><span class="loot" aria-hidden="true">&#9670;</span><span><strong>Key Result:</strong> Achieved 0.89 ROC-AUC and surfaced the top 5 churn drivers for retention strategy.</span></p>
+            <div class="project__links">
+              <a class="btn btn--sm btn--ghost" href="https://github.com/GokulBalachander" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> repository for Customer Churn Prediction Model (opens in new tab)</span></a>
+              <a class="btn btn--sm btn--primary" href="#" data-placeholder-link>Live Demo<span class="sr-only"> of Customer Churn Prediction Model</span></a>
+            </div>
+          </article>
+
+          <article class="card project reveal" data-category="analytics">
+            <div class="project__top">
+              <span class="project__type project__type--cyan">Main Quest &middot; Analysis</span>
+              <img class="project__icon" src="assets/icons/database.svg" alt="" width="40" height="40" />
+            </div>
+            <h3 class="project__title">Campus Dining Demand Analysis</h3>
+            <p class="project__desc">
+              SQL + Tableau analysis of point-of-sale data to model hourly demand patterns and recommend staffing
+              schedules for campus dining locations.
+            </p>
+            <ul class="tags" aria-label="Tools used">
+              <li class="tag">SQL</li><li class="tag">PostgreSQL</li><li class="tag">Tableau</li><li class="tag">Python</li>
+            </ul>
+            <p class="project__result"><span class="loot" aria-hidden="true">&#9670;</span><span><strong>Key Result:</strong> Proposed schedule reduced projected peak-hour wait times by 25%.</span></p>
+            <div class="project__links">
+              <a class="btn btn--sm btn--ghost" href="https://github.com/GokulBalachander" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> repository for Campus Dining Demand Analysis (opens in new tab)</span></a>
+              <a class="btn btn--sm btn--primary" href="#" data-placeholder-link>Live Demo<span class="sr-only"> of Campus Dining Demand Analysis</span></a>
+            </div>
+          </article>
+
+          <article class="card project reveal" data-category="ml">
+            <div class="project__top">
+              <span class="project__type project__type--amber">Epic Quest &middot; ML</span>
+              <img class="project__icon" src="assets/icons/trend.svg" alt="" width="40" height="40" />
+            </div>
+            <h3 class="project__title">Stock Sentiment &amp; Price Forecaster</h3>
+            <p class="project__desc">
+              NLP pipeline scoring financial news headlines with sentiment analysis, joined with historical prices to
+              forecast short-term movement using time-series models.
+            </p>
+            <ul class="tags" aria-label="Tools used">
+              <li class="tag">Python</li><li class="tag">NLTK</li><li class="tag">Prophet</li><li class="tag">Streamlit</li>
+            </ul>
+            <p class="project__result"><span class="loot" aria-hidden="true">&#9670;</span><span><strong>Key Result:</strong> Sentiment features improved forecast accuracy by 12% over a price-only baseline.</span></p>
+            <div class="project__links">
+              <a class="btn btn--sm btn--ghost" href="https://github.com/GokulBalachander" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> repository for Stock Sentiment Forecaster (opens in new tab)</span></a>
+              <a class="btn btn--sm btn--primary" href="#" data-placeholder-link>Live Demo<span class="sr-only"> of Stock Sentiment Forecaster</span></a>
+            </div>
+          </article>
+
+          <article class="card project reveal" data-category="automation">
+            <div class="project__top">
+              <span class="project__type project__type--green">Side Quest &middot; Data Eng</span>
+              <img class="project__icon" src="assets/icons/flow.svg" alt="" width="40" height="40" />
+            </div>
+            <h3 class="project__title">Budget Tracker ETL &amp; Insights</h3>
+            <p class="project__desc">
+              Lightweight ETL that ingests bank CSV exports, categorizes spending with rule-based + fuzzy matching,
+              stores it in SQLite, and generates a monthly financial health report.
+            </p>
+            <ul class="tags" aria-label="Tools used">
+              <li class="tag">Python</li><li class="tag">SQLite</li><li class="tag">Pandas</li><li class="tag">Matplotlib</li>
+            </ul>
+            <p class="project__result"><span class="loot" aria-hidden="true">&#9670;</span><span><strong>Key Result:</strong> Categorizes 95% of transactions automatically with zero manual tagging.</span></p>
+            <div class="project__links">
+              <a class="btn btn--sm btn--ghost" href="https://github.com/GokulBalachander" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> repository for Budget Tracker ETL (opens in new tab)</span></a>
+              <a class="btn btn--sm btn--primary" href="#" data-placeholder-link>Live Demo<span class="sr-only"> of Budget Tracker ETL</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE / CAMPAIGN HISTORY ============ -->
+    <section class="section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__game">// Campaign History</p>
+          <h2 class="section__title" id="experience-title">Experience</h2>
+          <p class="section__sub">Roles, research, hackathons, and leadership. Select a milestone to expand details.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__node timeline__node--cyan" aria-hidden="true"></span>
+            <div class="card timeline__card">
+              <button class="timeline__toggle" type="button" aria-expanded="true" aria-controls="exp-1">
+                <span class="timeline__meta"><span class="badge badge--cyan">Internship</span><time>Jun 2026 &ndash; Sep 2026</time></span>
+                <span class="timeline__role">Data Analyst Intern</span>
+                <span class="timeline__org">Company Name &middot; City, CA</span>
+                <span class="timeline__chev" aria-hidden="true"></span>
+              </button>
+              <div class="timeline__body" id="exp-1">
+                <ul>
+                  <li>Built SQL queries and Power BI reports tracking operational KPIs for a 40-person team.</li>
+                  <li>Automated a weekly Excel reporting process with Python, cutting turnaround from 2 days to 2 hours.</li>
+                  <li>Presented findings on customer retention trends to senior leadership.</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <span class="timeline__node timeline__node--green" aria-hidden="true"></span>
+            <div class="card timeline__card">
+              <button class="timeline__toggle" type="button" aria-expanded="false" aria-controls="exp-2">
+                <span class="timeline__meta"><span class="badge badge--green">Research</span><time>Jan 2026 &ndash; Present</time></span>
+                <span class="timeline__role">Undergraduate Research Assistant</span>
+                <span class="timeline__org">UC Riverside &middot; Data Science Lab</span>
+                <span class="timeline__chev" aria-hidden="true"></span>
+              </button>
+              <div class="timeline__body" id="exp-2" hidden>
+                <ul>
+                  <li>Cleaned and merged 5+ public datasets for a study on regional economic indicators.</li>
+                  <li>Developed reproducible Jupyter notebooks and visualizations used in a faculty paper draft.</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <span class="timeline__node timeline__node--amber" aria-hidden="true"></span>
+            <div class="card timeline__card">
+              <button class="timeline__toggle" type="button" aria-expanded="false" aria-controls="exp-3">
+                <span class="timeline__meta"><span class="badge badge--amber">Hackathon</span><time>Nov 2025</time></span>
+                <span class="timeline__role">Hacker &middot; CutieHacks</span>
+                <span class="timeline__org">UC Riverside &middot; 12-hour Hackathon</span>
+                <span class="timeline__chev" aria-hidden="true"></span>
+              </button>
+              <div class="timeline__body" id="exp-3" hidden>
+                <ul>
+                  <li>Co-built a web app that visualizes campus event attendance in real time with a team of 4.</li>
+                  <li>Owned the data layer: designed the schema and wrote the aggregation API in Python.</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <span class="timeline__node timeline__node--cyan" aria-hidden="true"></span>
+            <div class="card timeline__card">
+              <button class="timeline__toggle" type="button" aria-expanded="false" aria-controls="exp-4">
+                <span class="timeline__meta"><span class="badge badge--cyan">Leadership</span><time>Sep 2025 &ndash; Present</time></span>
+                <span class="timeline__role">Member &amp; Workshop Volunteer</span>
+                <span class="timeline__org">ACM@UCR (Association for Computing Machinery)</span>
+                <span class="timeline__chev" aria-hidden="true"></span>
+              </button>
+              <div class="timeline__body" id="exp-4" hidden>
+                <ul>
+                  <li>Helped run beginner-friendly Python and SQL workshops for 50+ students.</li>
+                  <li>Supported logistics for chapter hackathons and industry speaker events.</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline__item reveal">
+            <span class="timeline__node timeline__node--green" aria-hidden="true"></span>
+            <div class="card timeline__card">
+              <button class="timeline__toggle" type="button" aria-expanded="false" aria-controls="exp-5">
+                <span class="timeline__meta"><span class="badge badge--green">Education</span><time>Sep 2023 &ndash; Jun 2027</time></span>
+                <span class="timeline__role">B.S. Computer Science with Business Applications</span>
+                <span class="timeline__org">University of California, Riverside</span>
+                <span class="timeline__chev" aria-hidden="true"></span>
+              </button>
+              <div class="timeline__body" id="exp-5" hidden>
+                <ul>
+                  <li>Relevant coursework: Data Structures &amp; Algorithms, Database Systems, Intro to Data Science, Business Analytics, Financial Accounting, Statistics.</li>
+                  <li>GPA: 3.X / 4.0 &middot; Dean's List (placeholder)</li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS / INVENTORY ============ -->
+    <section class="section section--alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__game">// Inventory &amp; Stat Tree</p>
+          <h2 class="section__title" id="skills-title">Skills</h2>
+          <p class="section__sub">Proficiency levels reflect hands-on project and coursework experience.</p>
+        </header>
+
+        <div class="skills">
+          <div class="card skill-panel reveal">
+            <h3 class="skill-panel__title"><img src="assets/icons/code.svg" alt="" width="28" height="28" /> Languages</h3>
+            <ul class="stats">
+              <li class="statbar" style="--lvl:90"><span class="statbar__label">Python</span><span class="statbar__val">LV 9</span><span class="statbar__track" role="progressbar" aria-label="Python proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90"><span class="statbar__fill"></span></span></li>
+              <li class="statbar" style="--lvl:85"><span class="statbar__label">SQL</span><span class="statbar__val">LV 8</span><span class="statbar__track" role="progressbar" aria-label="SQL proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"><span class="statbar__fill"></span></span></li>
+              <li class="statbar" style="--lvl:75"><span class="statbar__label">C++</span><span class="statbar__val">LV 7</span><span class="statbar__track" role="progressbar" aria-label="C++ proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><span class="statbar__fill"></span></span></li>
+              <li class="statbar" style="--lvl:60"><span class="statbar__label">R</span><span class="statbar__val">LV 6</span><span class="statbar__track" role="progressbar" aria-label="R proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60"><span class="statbar__fill"></span></span></li>
+            </ul>
+          </div>
+
+          <div class="card skill-panel reveal">
+            <h3 class="skill-panel__title"><img src="assets/icons/tools.svg" alt="" width="28" height="28" /> Tools</h3>
+            <ul class="stats">
+              <li class="statbar statbar--green" style="--lvl:85"><span class="statbar__label">Power BI</span><span class="statbar__val">LV 8</span><span class="statbar__track" role="progressbar" aria-label="Power BI proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85"><span class="statbar__fill"></span></span></li>
+              <li class="statbar statbar--green" style="--lvl:80"><span class="statbar__label">Git</span><span class="statbar__val">LV 8</span><span class="statbar__track" role="progressbar" aria-label="Git proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80"><span class="statbar__fill"></span></span></li>
+              <li class="statbar statbar--green" style="--lvl:75"><span class="statbar__label">Playwright</span><span class="statbar__val">LV 7</span><span class="statbar__track" role="progressbar" aria-label="Playwright proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><span class="statbar__fill"></span></span></li>
+              <li class="statbar statbar--green" style="--lvl:80"><span class="statbar__label">Excel</span><span class="statbar__val">LV 8</span><span class="statbar__track" role="progressbar" aria-label="Excel proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80"><span class="statbar__fill"></span></span></li>
+            </ul>
+          </div>
+
+          <div class="card skill-panel reveal">
+            <h3 class="skill-panel__title"><img src="assets/icons/briefcase.svg" alt="" width="28" height="28" /> Business</h3>
+            <ul class="stats">
+              <li class="statbar statbar--amber" style="--lvl:80"><span class="statbar__label">Data Modeling</span><span class="statbar__val">LV 8</span><span class="statbar__track" role="progressbar" aria-label="Data Modeling proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80"><span class="statbar__fill"></span></span></li>
+              <li class="statbar statbar--amber" style="--lvl:70"><span class="statbar__label">Financial Analysis</span><span class="statbar__val">LV 7</span><span class="statbar__track" role="progressbar" aria-label="Financial Analysis proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="70"><span class="statbar__fill"></span></span></li>
+              <li class="statbar statbar--amber" style="--lvl:75"><span class="statbar__label">Data Storytelling</span><span class="statbar__val">LV 7</span><span class="statbar__track" role="progressbar" aria-label="Data Storytelling proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75"><span class="statbar__fill"></span></span></li>
+              <li class="statbar statbar--amber" style="--lvl:65"><span class="statbar__label">A/B Testing</span><span class="statbar__val">LV 6</span><span class="statbar__track" role="progressbar" aria-label="A/B Testing proficiency" aria-valuemin="0" aria-valuemax="100" aria-valuenow="65"><span class="statbar__fill"></span></span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="inventory reveal">
+          <h3 class="inventory__title">Equipped Libraries &amp; Platforms</h3>
+          <ul class="inventory__grid">
+            <li class="slot slot--rare">Pandas</li>
+            <li class="slot slot--rare">NumPy</li>
+            <li class="slot slot--epic">scikit-learn</li>
+            <li class="slot">Matplotlib</li>
+            <li class="slot">Seaborn</li>
+            <li class="slot slot--epic">Tableau</li>
+            <li class="slot">Jupyter</li>
+            <li class="slot slot--rare">PostgreSQL</li>
+            <li class="slot">Google Sheets</li>
+            <li class="slot">Streamlit</li>
+            <li class="slot slot--legend">Statistics</li>
+            <li class="slot">Linux / Bash</li>
+          </ul>
+          <p class="inventory__legend">
+            <span class="slot-key slot-key--legend">Legendary</span>
+            <span class="slot-key slot-key--epic">Epic</span>
+            <span class="slot-key slot-key--rare">Rare</span>
+            <span class="slot-key">Common</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT / TRANSMISSION UPLINK ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <p class="section__game">// Transmission Uplink</p>
+          <h2 class="section__title" id="contact-title">Contact</h2>
+          <p class="section__sub">Recruiting for a data role? I'd love to connect. I usually reply within 24 hours.</p>
+        </header>
+
+        <div class="card uplink reveal">
+          <div class="uplink__signal" aria-hidden="true"><span></span><span></span><span></span></div>
+          <p class="uplink__status"><span class="eyebrow__dot" aria-hidden="true"></span> Channel open &middot; Awaiting transmission</p>
+
+          <!-- Replace the placeholder email in BOTH the href and the data-email attribute -->
+          <div class="uplink__email">
+            <a class="uplink__address" href="mailto:your.email@example.com" id="email-link">your.email@example.com</a>
+            <button class="btn btn--sm btn--ghost" type="button" id="copy-email" data-email="your.email@example.com">
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 16H8V7h11v14z"/></svg>
+              <span class="copy-label">Copy Email</span>
+            </button>
+          </div>
+          <p class="uplink__toast" id="copy-toast" role="status" aria-live="polite"></p>
+
+          <ul class="uplink__links">
+            <li>
+              <a class="btn btn--primary" href="mailto:your.email@example.com">
+                <img src="assets/icons/mail.svg" alt="" width="22" height="22" /> Email Me
+              </a>
+            </li>
+            <li>
+              <a class="btn btn--secondary" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+                <img src="assets/icons/linkedin.svg" alt="" width="22" height="22" /> LinkedIn<span class="sr-only"> (opens in new tab)</span>
+              </a>
+            </li>
+            <li>
+              <a class="btn btn--secondary" href="https://github.com/GokulBalachander" target="_blank" rel="noopener noreferrer">
+                <img src="assets/icons/github.svg" alt="" width="22" height="22" /> GitHub<span class="sr-only"> (opens in new tab)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; <span id="year">2026</span> Gokul Balachander &middot; Built with HTML, CSS &amp; vanilla JS.</p>
+      <p class="footer__save"><span class="eyebrow__dot" aria-hidden="true"></span> Progress auto-saved &middot; <a href="#home">Return to Spawn &uarr;</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
